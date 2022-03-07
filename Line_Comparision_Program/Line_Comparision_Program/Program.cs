@@ -21,10 +21,11 @@ namespace Line_Comparision_Program
             int y2 = int.Parse(Console.ReadLine());
 
             double LengthL1 = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
-            Console.WriteLine("Length of Line 1 :" + LengthL1);
+            Console.WriteLine("Length of Line 1 : " + LengthL1);
 
             Console.WriteLine("Enter the coordinates of second line \n");
-              Console.WriteLine("Enter the value of x3:");
+
+            Console.WriteLine("Enter the value of x3:");
             int x3 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Enter the value of x4:");
@@ -41,18 +42,21 @@ namespace Line_Comparision_Program
 
             if (LengthL1 == LengthL2)
             {
-                Console.WriteLine("Both line is equal");
+                Console.WriteLine(" Both Lines are equal");
+            }
+            else if (LengthL1 > LengthL2)
+            {
+                Console.WriteLine("Line1 is greater than Line2");
             }
             else
             {
-                Console.WriteLine("Line is not equal");
+                Console.WriteLine("Line2 is greater than Line1");
             }
 
         }
 
     }
 }
-
 
 
 
